@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashish Singh | QA Engineer Portfolio</title>
+  <meta name="description" content="Ashish Singh - QA Engineer specializing in Manual Testing, Automation Testing, Selenium, Playwright, and API Testing. Currently at Speqto Technologies, Noida.">
+  <meta name="keywords" content="QA Engineer, Software Testing, Manual Testing, Automation Testing, Selenium, Playwright, Postman, Portfolio">
+  <meta name="author" content="Ashish Singh">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-gradient-blur one"></div>
+  <div class="bg-gradient-blur two"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Ashish<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#automation">Automation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta desktop">Get in Touch</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#automation">Automation</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="section hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge fade-in">
+            <span class="dot"></span>
+            Currently working at Speqto Technologies
+          </div>
+          <h1 class="hero-name fade-in fade-in-delay-1">
+            Hi, I'm<br><span class="gradient-text">Ashish Singh</span>
+          </h1>
+          <p class="hero-role fade-in fade-in-delay-2">QA Engineer &mdash; Manual &amp; Automation Testing</p>
+          <p class="hero-desc fade-in fade-in-delay-3">
+            Passionate about delivering reliable, high-quality software through systematic testing,
+            automation, and continuous quality improvement. Skilled in Selenium, Playwright, API testing,
+            and end-to-end quality assurance.
+          </p>
+          <div class="hero-buttons fade-in fade-in-delay-4">
+            <a href="#projects" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              View Projects
+            </a>
+            <a href="#" class="btn-outline" id="downloadResume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+          </div>
+          <div class="hero-social fade-in fade-in-delay-4">
+            <a href="#" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" target="_blank" aria-label="GitHub" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="mailto:ashish@example.com" aria-label="Email" title="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-wrapper">
+            <div class="hero-photo-ring"></div>
+            <div class="hero-photo">AS</div>
+            <div class="hero-float-card top-right">
+              <span class="card-icon">&#9745;</span> Manual &amp; Automation
+            </div>
+            <div class="hero-float-card bottom-left">
+              <span class="card-icon">&#128736;</span> Selenium &bull; Playwright
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label fade-in">About Me</div>
+      <h2 class="section-title fade-in">Quality-Focused <span class="gradient-text">QA Engineer</span></h2>
+      <p class="section-subtitle fade-in">Dedicated to delivering bug-free software through meticulous testing and automation.</p>
+
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>
+            I'm a QA Engineer currently working at <strong>Speqto Technologies Pvt. Ltd.</strong> in Noida,
+            with approximately 1 year of professional experience in software testing and quality assurance.
+          </p>
+          <p>
+            My work spans both manual and automation testing, covering functional, regression, integration,
+            and end-to-end testing for web applications including e-commerce and SaaS platforms. I focus on
+            identifying critical defects early, writing comprehensive test cases, and building automation
+            scripts to improve testing efficiency.
+          </p>
+          <p>
+            I believe that quality is not just about finding bugs &mdash; it's about ensuring that every
+            feature works reliably for real users. My approach combines thorough manual exploration with
+            targeted automation to deliver software that teams and users can trust.
+          </p>
+        </div>
+        <div class="about-stats fade-in">
+          <div class="stat-card">
+            <div class="stat-value">~1</div>
+            <div class="stat-label">Year Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">5+</div>
+            <div class="stat-label">Projects Tested</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">4</div>
+            <div class="stat-label">Testing Types</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">15+</div>
+            <div class="stat-label">Tools &amp; Skills</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label fade-in">Technical Skills</div>
+      <h2 class="section-title fade-in">Skills &amp; <span class="gradient-text">Expertise</span></h2>
+      <p class="section-subtitle fade-in">Tools, technologies, and methodologies I work with daily.</p>
+
+      <div class="skills-grid">
+        <div class="skill-category fade-in">
+          <div class="skill-category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="skill-category-title">Testing</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Manual Testing</span>
+            <span class="skill-tag">Functional Testing</span>
+            <span class="skill-tag">Regression Testing</span>
+            <span class="skill-tag">Integration Testing</span>
+            <span class="skill-tag">System Testing</span>
+            <span class="skill-tag">UI Testing</span>
+            <span class="skill-tag">End-to-End Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-category fade-in fade-in-delay-1">
+          <div class="skill-category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-category-title">Automation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Selenium WebDriver</span>
+            <span class="skill-tag">Playwright</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category fade-in fade-in-delay-2">
+          <div class="skill-category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+          </div>
+          <h3 class="skill-category-title">API &amp; Database</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">REST API Testing</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Database Validation</span>
+          </div>
+        </div>
+
+        <div class="skill-category fade-in fade-in-delay-3">
+          <div class="skill-category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
+          </div>
+          <h3 class="skill-category-title">Tools &amp; Processes</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Jira</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Browser DevTools</span>
+            <span class="skill-tag">Agile / Scrum</span>
+            <span class="skill-tag">Bug Reporting</span>
+            <span class="skill-tag">Test Documentation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label fade-in">Professional Experience</div>
+      <h2 class="section-title fade-in">Work <span class="gradient-text">Experience</span></h2>
+      <p class="section-subtitle fade-in">My professional journey in quality assurance.</p>
+
+      <div class="experience-timeline">
+        <div class="exp-item fade-in">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-company">Speqto Technologies Pvt. Ltd.</h3>
+              <p class="exp-role">QA Engineer</p>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-badge">Current</span>
+              <span class="exp-location">Noida, Uttar Pradesh &bull; ~1 Year</span>
+            </div>
+          </div>
+          <ul class="exp-responsibilities">
+            <li>Performing UI, functional, regression, and integration testing on web applications</li>
+            <li>Designing and executing comprehensive test cases and test scenarios</li>
+            <li>Conducting end-to-end testing to validate complete application workflows</li>
+            <li>Testing RESTful APIs using Postman &mdash; validating requests, responses, and status codes</li>
+            <li>Performing database validation and data integrity checks using SQL queries</li>
+            <li>Identifying, documenting, and tracking defects using Jira</li>
+            <li>Retesting resolved bugs and verifying fixes across environments</li>
+            <li>Collaborating with developers to reproduce, debug, and resolve software defects</li>
+            <li>Maintaining QA documentation including test plans, bug reports, and regression sheets</li>
+            <li>Testing SaaS-based and e-commerce web applications</li>
+          </ul>
+          <div class="exp-tech">
+            <span class="exp-tech-tag">Selenium</span>
+            <span class="exp-tech-tag">Playwright</span>
+            <span class="exp-tech-tag">Java</span>
+            <span class="exp-tech-tag">JavaScript</span>
+            <span class="exp-tech-tag">Postman</span>
+            <span class="exp-tech-tag">SQL</span>
+            <span class="exp-tech-tag">Jira</span>
+            <span class="exp-tech-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label fade-in">Featured Projects</div>
+      <h2 class="section-title fade-in">QA <span class="gradient-text">Projects</span></h2>
+      <p class="section-subtitle fade-in">Real-world testing projects demonstrating my QA expertise.</p>
+
+      <div class="projects-filter fade-in">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="manual">Manual Testing</button>
+        <button class="filter-btn" data-filter="automation">Automation</button>
+        <button class="filter-btn" data-filter="api">API Testing</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card fade-in" data-category="manual">
+          <div class="project-card-header">
+            <span class="project-type-badge">E-Commerce</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">E-Commerce Web Application Testing</h3>
+            <p class="project-desc">
+              Comprehensive manual testing of a full-featured e-commerce platform covering user registration,
+              product search, cart management, checkout flow, and payment integration.
+            </p>
+            <div class="project-scope">
+              <div class="project-scope-title">Testing Scope</div>
+              <div class="project-scope-list">
+                <span class="project-scope-item">UI Testing</span>
+                <span class="project-scope-item">Functional Testing</span>
+                <span class="project-scope-item">Regression Testing</span>
+                <span class="project-scope-item">Cross-Browser</span>
+                <span class="project-scope-item">End-to-End</span>
+              </div>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-item">Manual Testing</span>
+              <span class="project-tech-item">Jira</span>
+              <span class="project-tech-item">SQL</span>
+              <span class="project-tech-item">Browser DevTools</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-in fade-in-delay-1" data-category="manual">
+          <div class="project-card-header">
+            <span class="project-type-badge">SaaS Platform</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">SaaS Web Application Testing</h3>
+            <p class="project-desc">
+              End-to-end testing of a SaaS-based web application, validating core business workflows,
+              user management, dashboard functionality, and data reporting features.
+            </p>
+            <div class="project-scope">
+              <div class="project-scope-title">Testing Scope</div>
+              <div class="project-scope-list">
+                <span class="project-scope-item">Integration Testing</span>
+                <span class="project-scope-item">System Testing</span>
+                <span class="project-scope-item">Workflow Validation</span>
+                <span class="project-scope-item">Data Validation</span>
+              </div>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-item">Manual Testing</span>
+              <span class="project-tech-item">Postman</span>
+              <span class="project-tech-item">SQL</span>
+              <span class="project-tech-item">Jira</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card fade-in fade-in-delay-2" data-category="automation">
+          <div class="project-card-header">
+            <span class="project-type-badge">Automation</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Selenium WebDriver Automation Suite</h3>
+            <p class="project-desc">
+              Built an automation testing suite using Selenium WebDriver with Java, implementing the
+              Page Object Model pattern to automate regression test scenarios for web applications.
+            </p>
+            <div class="project-scope">
+              <div class="project-scope-title">Testing Scope</div>
+              <div class="project-scope-list">
+                <span class="project-scope-item">Login Automation</span>
+                <span class="project-scope-item">Form Validation</span>
+                <span class="project-scope-item">Navigation Flows</span>
+                <span class="project-scope-item">Regression Suite</span>
+              </div>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-item">Selenium</span>
+              <span class="project-tech-item">Java</span>
+              <span class="project-tech-item">TestNG</span>
+              <span class="project-tech-item">POM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card fade-in fade-in-delay-3" data-category="automation">
+          <div class="project-card-header">
+            <span class="project-type-badge">Automation</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Playwright End-to-End Testing</h3>
+            <p class="project-desc">
+              Developed end-to-end test scripts using Playwright with JavaScript, covering critical
+              user journeys and cross-browser testing for a web application.
+            </p>
+            <div class="project-scope">
+              <div class="project-scope-title">Testing Scope</div>
+              <div class="project-scope-list">
+                <span class="project-scope-item">Cross-Browser Testing</span>
+                <span class="project-scope-item">E2E Workflows</span>
+                <span class="project-scope-item">Visual Validation</span>
+                <span class="project-scope-item">Test Reports</span>
+              </div>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-item">Playwright</span>
+              <span class="project-tech-item">JavaScript</span>
+              <span class="project-tech-item">HTML Reporter</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card fade-in" data-category="api">
+          <div class="project-card-header">
+            <span class="project-type-badge">API Testing</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">RESTful API Testing with Postman</h3>
+            <p class="project-desc">
+              Designed and executed API test collections in Postman covering CRUD operations,
+              authentication flows, error handling, and response validation.
+            </p>
+            <div class="project-scope">
+              <div class="project-scope-title">Testing Scope</div>
+              <div class="project-scope-list">
+                <span class="project-scope-item">Positive &amp; Negative Testing</span>
+                <span class="project-scope-item">Status Code Validation</span>
+                <span class="project-scope-item">Auth Testing</span>
+                <span class="project-scope-item">Schema Validation</span>
+              </div>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-item">Postman</span>
+              <span class="project-tech-item">REST API</span>
+              <span class="project-tech-item">JSON</span>
+              <span class="project-tech-item">Newman</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card fade-in fade-in-delay-1" data-category="api">
+          <div class="project-card-header">
+            <span class="project-type-badge">Database</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Database Testing &amp; SQL Validation</h3>
+            <p class="project-desc">
+              Performed database testing to validate data integrity, consistency, and accuracy
+              across application workflows using SQL queries and database tools.
+            </p>
+            <div class="project-scope">
+              <div class="project-scope-title">Testing Scope</div>
+              <div class="project-scope-list">
+                <span class="project-scope-item">Data Integrity</span>
+                <span class="project-scope-item">CRUD Validation</span>
+                <span class="project-scope-item">Schema Checks</span>
+                <span class="project-scope-item">Query Optimization</span>
+              </div>
+            </div>
+            <div class="project-tech-stack">
+              <span class="project-tech-item">SQL</span>
+              <span class="project-tech-item">MySQL</span>
+              <span class="project-tech-item">Data Validation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Automation Showcase -->
+  <section class="section" id="automation">
+    <div class="container">
+      <div class="section-label fade-in">Automation Showcase</div>
+      <h2 class="section-title fade-in">Automation <span class="gradient-text">Framework</span></h2>
+      <p class="section-subtitle fade-in">Tools and frameworks I use for test automation.</p>
+
+      <div class="automation-grid">
+        <div class="auto-card fade-in">
+          <div class="auto-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Selenium WebDriver</h3>
+          <p>Building automated test scripts with Java for web application testing using the Selenium framework.</p>
+          <ul class="auto-features">
+            <li>Page Object Model (POM) pattern</li>
+            <li>Cross-browser test execution</li>
+            <li>Data-driven testing</li>
+            <li>Test reporting with TestNG</li>
+          </ul>
+        </div>
+
+        <div class="auto-card fade-in fade-in-delay-1">
+          <div class="auto-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3>Playwright</h3>
+          <p>Writing modern end-to-end tests with JavaScript using Microsoft's Playwright framework.</p>
+          <ul class="auto-features">
+            <li>Multi-browser testing (Chromium, Firefox, WebKit)</li>
+            <li>Auto-wait and web-first assertions</li>
+            <li>Parallel test execution</li>
+            <li>HTML test report generation</li>
+          </ul>
+        </div>
+
+        <div class="auto-card fade-in fade-in-delay-2">
+          <div class="auto-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2"/></svg>
+          </div>
+          <h3>API Testing with Postman</h3>
+          <p>Creating and executing API test collections with comprehensive validation and test scripting.</p>
+          <ul class="auto-features">
+            <li>Collection-based API testing</li>
+            <li>Pre-request &amp; post-response scripts</li>
+            <li>Environment &amp; variable management</li>
+            <li>Automated test assertions</li>
+          </ul>
+        </div>
+
+        <div class="auto-card fade-in fade-in-delay-3">
+          <div class="auto-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+          </div>
+          <h3>SQL &amp; Database Testing</h3>
+          <p>Validating data integrity and backend consistency through structured SQL queries and checks.</p>
+          <ul class="auto-features">
+            <li>Data validation queries</li>
+            <li>CRUD operation verification</li>
+            <li>Data integrity checks</li>
+            <li>Backend-frontend data consistency</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Code Sample -->
+      <div class="code-block fade-in">
+        <div class="code-header">
+          <span class="code-dot red"></span>
+          <span class="code-dot yellow"></span>
+          <span class="code-dot green"></span>
+          <span class="code-filename">LoginTest.java</span>
+        </div>
+        <div class="code-body">
+<pre><span class="keyword">public class</span> <span class="class">LoginTest</span> {
+
+    <span class="keyword">private</span> <span class="class">WebDriver</span> driver;
+    <span class="keyword">private</span> <span class="class">LoginPage</span> loginPage;
+
+    <span class="comment">@BeforeMethod</span>
+    <span class="keyword">public void</span> <span class="method">setUp</span>() {
+        driver = <span class="keyword">new</span> <span class="class">ChromeDriver</span>();
+        driver.<span class="method">get</span>(<span class="string">"https://example.com/login"</span>);
+        loginPage = <span class="keyword">new</span> <span class="class">LoginPage</span>(driver);
+    }
+
+    <span class="comment">@Test</span>
+    <span class="keyword">public void</span> <span class="method">testValidLogin</span>() {
+        loginPage.<span class="method">enterUsername</span>(<span class="string">"testuser"</span>);
+        loginPage.<span class="method">enterPassword</span>(<span class="string">"password123"</span>);
+        loginPage.<span class="method">clickLogin</span>();
+        <span class="class">Assert</span>.<span class="method">assertTrue</span>(
+            loginPage.<span class="method">isDashboardDisplayed</span>()
+        );
+    }
+}</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- API Testing Showcase -->
+  <section class="section" id="api-testing">
+    <div class="container">
+      <div class="section-label fade-in">API Testing</div>
+      <h2 class="section-title fade-in">API <span class="gradient-text">Validation</span></h2>
+      <p class="section-subtitle fade-in">Sample API testing scenarios demonstrating testing methodology.</p>
+
+      <div class="api-grid">
+        <div class="api-card fade-in">
+          <span class="api-method get">GET</span>
+          <div class="api-endpoint">/api/v1/users/{id}</div>
+          <p class="api-desc">Retrieve user profile data and validate response structure, status codes, and field values.</p>
+          <ul class="api-validations">
+            <li>Status code 200 for valid user</li>
+            <li>Status code 404 for invalid ID</li>
+            <li>Response schema validation</li>
+            <li>Response time under threshold</li>
+          </ul>
+        </div>
+
+        <div class="api-card fade-in fade-in-delay-1">
+          <span class="api-method post">POST</span>
+          <div class="api-endpoint">/api/v1/users/register</div>
+          <p class="api-desc">Test user registration endpoint with valid and invalid payloads.</p>
+          <ul class="api-validations">
+            <li>Status code 201 for successful creation</li>
+            <li>Status code 400 for invalid data</li>
+            <li>Duplicate email handling (409)</li>
+            <li>Required field validation</li>
+          </ul>
+        </div>
+
+        <div class="api-card fade-in fade-in-delay-2">
+          <span class="api-method put">PUT</span>
+          <div class="api-endpoint">/api/v1/users/{id}</div>
+          <p class="api-desc">Update user information and verify data persistence and validation rules.</p>
+          <ul class="api-validations">
+            <li>Successful update returns 200</li>
+            <li>Partial update handling</li>
+            <li>Authorization validation (401/403)</li>
+            <li>Data persistence verification</li>
+          </ul>
+        </div>
+
+        <div class="api-card fade-in fade-in-delay-3">
+          <span class="api-method delete">DELETE</span>
+          <div class="api-endpoint">/api/v1/users/{id}</div>
+          <p class="api-desc">Validate deletion flow with proper authentication and error handling.</p>
+          <ul class="api-validations">
+            <li>Successful deletion returns 204</li>
+            <li>Re-fetch returns 404 after delete</li>
+            <li>Unauthorized deletion blocked</li>
+            <li>Cascade deletion validation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-label fade-in">Education</div>
+      <h2 class="section-title fade-in">Educational <span class="gradient-text">Background</span></h2>
+
+      <div class="education-card fade-in">
+        <div class="education-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+        </div>
+        <h3 class="education-degree">B.Com (Computer)</h3>
+        <p class="education-school">Bachelor of Commerce with Computer Applications</p>
+        <p class="education-year">Completed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label fade-in">Get in Touch</div>
+      <h2 class="section-title fade-in">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="section-subtitle fade-in">Open to new opportunities and professional connections.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <a href="mailto:ashish@example.com" class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">ashish@example.com</div>
+            </div>
+          </a>
+          <a href="#" target="_blank" class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/ashish-singh</div>
+            </div>
+          </a>
+          <a href="#" target="_blank" class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/ashish-singh</div>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Noida, Uttar Pradesh, India</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form fade-in" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Let's work together">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-text">
+        &copy; 2024 <span>Ashish Singh</span> &mdash; QA Engineer. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="mailto:ashish@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
